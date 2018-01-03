@@ -8,6 +8,8 @@ https://github.com/thoukydides/heatmiser-wifi
 
 The code is based on the 'fake.js' example from PJCzx. If it works for you, that's at least two of us!
 
+I am using iOS 11.2.1 and homebridge.
+
 Basic steps to get going:
 
 1. Install homebridge and homebridge-thermostat
@@ -18,3 +20,7 @@ Basic steps to get going:
 6. Start this microserver with 'node heatmiser.js'
 
 Note that I am not a software developer, and had not touched any Node.JS code until trying this out. The code does very little error checking. It works for me :)
+
+Setting / reading Relative Humidity is not implemented and returns dummy values as per fake.js.
+
+Only 'Heat' and 'Off' modes are possible. If HomeKit sets to Cool or Auto, Heat will be selected. 'Off' sets frost mode.

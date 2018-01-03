@@ -55,6 +55,7 @@ app
 
 })
 
+// NOT IMPLEMENTED
 .get('/targetRelativeHumidity/:humidity', function (req, res, next) { //Set target state
   data.currentRelativeHumidity = data.targetRelativeHumidity;
   data.targetRelativeHumidity = parseFloat(req.params.humidity);
