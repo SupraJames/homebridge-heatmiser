@@ -12,4 +12,9 @@ Basic steps to get going:
 
 1. Install homebridge and homebridge-thermostat
 2. Confgure and test the above
-3. Start this microserver with 'node heatmiser.js'
+3. Install and configure https://github.com/thoukydides/heatmiser-wifi
+4. Make sure running 'heatmiser_json.pl' without arguments gives you valid results (hint - set up ~/.heatmiser to avoid needing to specify -h and -p)
+5. Edit this heatmiser.pl to check the path of the heatmiser_json.pl
+6. Start this microserver with 'node heatmiser.js'
+
+Note that I am not a software developer, and had not touched any Node.JS code until trying this out. The code does very little error checking. It works for me :)
